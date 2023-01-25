@@ -1,0 +1,252 @@
+@import "https://fontlibrary.org//face/funtype";
+@import "https://fontlibrary.org//face/great-vibes";
+@import "https://fontlibrary.org//face/gudariak-color";
+@import "https://fontlibrary.org//face/uniwide";
+
+  
+  .topmenu {
+  color: white;
+  margin: 10px;
+  padding: 20px;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration:none;
+  border-radius: 1mm;
+}
+
+
+.topmenu:hover {
+  background-color: rgb(198, 143, 187);
+  color: whitesmoke;
+  font-weight: bolder;
+}
+
+.topdiv {
+float: right;
+margin: 2px;
+}
+
+@keyframes intro {
+  from {color: rgb(34, 29, 56);}
+  to {color:white}
+}
+
+@keyframes shake_image {
+  from {transform: rotate(0deg)}
+  to {transform: rotate(5deg)}}
+
+.shake {
+  animation-name: shake_image;
+  animation-duration: 1s;
+  position: relative;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.introduction  {
+  color: whitesmoke;
+  text-align: justify;
+  letter-spacing: 3px;
+  font-size: 50px;
+  font-style: italic;
+  text-align: center;
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  animation-name: intro;
+  animation-duration: 5s;
+  position: relative;
+}
+
+.profile_name {
+  margin: 10px;
+  height: 100px;
+  padding-top: 20px;
+  font-size: 30px;
+  color: rgb(240, 234, 245);
+  font-family: 'UniWideRegular';
+  letter-spacing: 3mm;
+
+  float: left;
+}
+
+.container {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.details {
+  background-color: rgb(255, 255, 255);
+  border-radius: 1mm;
+  position:inherit;
+  top: 10px;
+  margin: 50px;
+  padding: 10px;
+  display: flex;
+}
+
+.aboutme {
+  border-radius: 1mm;
+  position: relative;
+  top: 10px;
+  margin: 50px;
+  padding: 10px;
+  display: flex;
+  background-color: white;
+  color:blueviolet;
+  font-family: 'FuntypeRegular';
+  line-height: 1cm;
+}
+
+.profile_image {
+  width: 200px;height: fit-content;vertical-align: middle;
+}
+
+.recos {
+  padding: 5mm;
+  padding-bottom: 20mm;
+}
+
+.reco {
+  background-color: rgb(227, 227, 238);
+  border-radius: 3mm;
+  top: 10px;
+  padding: 10px;
+  display: flex;
+  margin: 3px;
+}
+
+.reco:hover {
+  box-shadow: 3px 3px 5px 6px rgb(155, 155, 155);
+  scale: 102%;
+  margin:5px;
+}
+
+.skills {
+  background-color: rgb(34, 29, 56);
+  top: 10px;
+  margin: 50px;
+  padding: 10px;
+  width:2in;
+  height: 2in;
+  font-size: 20px;
+  cursor: pointer;
+  float: left;
+  color:whitesmoke;
+  border-color: #747474;
+  border-style: groove;
+}
+
+.skills:hover {
+    box-shadow: 1px 1px 5px 6px rgb(114, 95, 95);
+    scale:110%;
+}
+
+.skills img {
+  margin-left: 10px;
+  height: 35px;
+}
+
+
+ .skills_title {
+  float: right;
+  margin-bottom: 20px;
+  color:azure;
+} 
+
+.info {
+  padding: 10px;
+  font-size: 25px;
+  color: white;
+  font-family:'Lucida Sans';
+}
+
+.item_head {
+  color:rgb(74, 74, 133);
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin:5px;
+}
+
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconbutton{
+width:40px;
+height:40px;
+border-radius: 100%;
+box-shadow: 10px 10px 5px #aaaaaa;
+background-color: rgb(225, 235, 235);
+display: flex;
+align-items: center;
+justify-content: center;
+position: fixed;
+bottom:30px;
+left:0;
+}
+
+.popup {
+  width:400px;
+  background-color: darkgrey;
+  border-radius: 3mm;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  position: fixed;
+  padding: 30px;
+  visibility: hidden;
+}
+
+.popup img {
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
+.proj_popup {
+  width:700px;
+  background-color: rgb(245, 229, 229);
+}
+
+.proj_details {
+  margin:6mm;
+  font-family: Georgia;
+}
+
+body {background-color: rgb(34, 29, 56);}
+header {color: white;font-size: 30px;padding: 3px;}
+
+
+label {color:white; font-size: larger; font-family: Gill Sans;}
+
+input,textarea {margin: 10px;  padding: 5px; width:100%}
+
+button {background-color: rgb(83, 83, 89);color: aliceblue; align-self: center; border-radius: 3mm; font-size: 20px; margin:7mm}
+button:hover {background-color: rgb(183, 183, 194);}
+
+textarea {row-gap: 3px;}
+fieldset {display:flexbox;align-content: center;justify-content: center;  padding: 25px; margin-left: 50px; margin-right: 50px;   border: thin solid white;
+  width: 50%;
+}
+
+ul li {
+  color: white;
+  margin: 10px;
+  padding:5px;
+  list-style:none;
+}
+
+li:hover {
+  background:rgb(45, 38, 76);
+  color: whitesmoke;
+  box-shadow: 3px 3px 3px 3px #aaaaaa;
+  list-style: square;
+}
+
+
+
